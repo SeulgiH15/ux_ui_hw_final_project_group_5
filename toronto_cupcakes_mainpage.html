@@ -2,51 +2,48 @@
 <html>
 <head>
   <link href="css/toronto_cupcakes_mainpage.css" rel="stylesheet" type="text/css">    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="js/tc_mainpage.js"></script>
 </head>
 
 <body>
 
 <!--navigation-->
-  <nav>
-      <a href="" class="navlogo"> 
-        <img src="images/tclogo.png" class="navlogo">
-      </a>
+<div class="topnav">
+  <div class="logo"></div>
+  <div class="topnav-centered">
+    <a href="#" class="active">Cupcakes</a>
+    <a href="#" class="active">Custom cupcakes</a>
+    <a href="#" class="active">Delivery</a>
+    <a href="#" class="active">About us</a>
+    <a href="#" class="active">My orders</a>
+  </div>
+</div>
 
-      </div>
 
-      <div class="rightnav">
-        <a href="https://www.google.com/" class="navlink" id="cupcakes">Cupcakes</a>
-        <a href="https://www.google.com/" class="navlink" id="customcupcakes">Customcupcakes</a>
-        <a href="https://www.google.com/" class="navlink" id="delivery">Delivery</a>
-        <a href="https://www.google.com/" class="navlink" id="aboutus">About us</a>
-        <a href="https://www.google.com/" class="navlink" id="myorder">My order</a>      
-      </div>
-   </nav>
 
-   <!-- Slideshow container -->
+<!-- Slideshow container -->
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
     <img src="images/hero1png.png" style="width:100%">
-    <div class="text">Caption Text</div>
-  </div>
-
+    <div class="text">Event cupcakes</div> 
+  </div> 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
     <img src="images/hero2.png" style="width:100%">
-    <div class="text">Caption Two</div>
+    <div class="text">Sepecial event cupcakes</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
     <img src="images/hero3.png" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="text">Holiday cupcakes</div>
   </div>
 
   <!-- Next and previous buttons -->
@@ -61,10 +58,214 @@
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
- 
-<div class="images">
-  <img src="images/hero1png.png">
+
+<!-- intro -->
+<div class="title">
+  <h1 class="cupcakes">Welcpme!</h1>
 </div>
+<div class="p1">
+  <p>Thank you for stopping by Toronto Cupcake. Canada's and the GTA's favourite stop for that special treat. Order cupcakes online 24/7 for your special event. Delivery avaialable most days between 8 and 6pm TO time.</p>
+  <p>Celebrating our 11th year of providing Canada's most delicious cupcakes for business meetings, birthdays, weddings, or for no other reason than because.
+  </p>
+  <p>Our cupcakes are baked daily using the finest ingredients.</p>
+  <p>Cupcake delivery is available throughout Toronto, the GTA, and beyond. Cupcakes are delivered in our signature pink box.</p>
+</div>
+<div class="line"></div>
+
+<!-- card -->
+<div class="title">
+  <h2 class="cupcakes">Featured</h2>
+</div>
+<div class="line"></div>
+
+<div class="card_section1">
+  <div class="Product">
+    <img src="images/cc1.png" alt="Alps">
+    <div class="cupcake_info">
+      <div class="name">Chocolate bomb cupcake</div>
+      <div class="price">$3.75 ea</div>
+    </div>
+    <div class="order_button">
+      <div class="first">QTY</div>
+      <div class="quantity">
+        <form action="/action_page.php">
+          <input type="text" id="nb" name="nb">
+        </form>
+      </div>
+      <div class="add_cart">
+        <button a="#" class="add_button">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="Product">
+    <img src="images/cc2.png" alt="Alps">
+    <div class="cupcake_info">
+      <div class="name">Chocolate bomb cupcake</div>
+      <div class="price">$3.75 ea</div>
+    </div>
+    <div class="order_button">
+      <div class="first">QTY</div>
+      <div class="quantity">
+        <form action="/action_page.php">
+          <input type="text" id="nb" name="nb">
+        </form>
+      </div>
+      <div class="add_cart">
+        <button a="#" class="add_button">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="Product">
+    <img src="images/cc3p.png" alt="Alps">
+    <div class="cupcake_info">
+      <div class="name">Chocolate bomb cupcake</div>
+      <div class="price">$3.75 ea</div>
+    </div>
+    <div class="order_button">
+      <div class="first">QTY</div>
+      <div class="quantity">
+        <form action="/action_page.php">
+          <input type="text" id="nb" name="nb">
+        </form>
+      </div>
+      <div class="add_cart">
+        <button a="#" class="add_button">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="Product">
+    <img src="images/cc4png.png" alt="Alps">
+    <div class="cupcake_info">
+      <div class="name">Chocolate bomb cupcake</div>
+      <div class="price">$3.75 ea</div>
+    </div>
+    <div class="order_button">
+      <div class="first">QTY</div>
+      <div class="quantity">
+        <form action="/action_page.php">
+          <input type="text" id="nb" name="nb">
+        </form>
+      </div>
+      <div class="add_cart">
+        <button a="#" class="add_button">Add to Cart</button>
+      </div>
+    </div>
+  </div>
   
+
+<div> 
+  <button class="button">Button</button>  
+  <div class="line"></div>  
+</div>
+
+<div>
+    <div class="title">
+    <h2 class="cupcakes">Special Events Cupcakes</h2>
+  </div>
+  <div class="line"></div>
+</div> 
+
+<div>
+  <div class="card_section2">
+    <div class="Product">
+      <img src="images/cc1.png" alt="Alps">
+      <div class="cupcake_info">
+        <div class="name">Chocolate bomb cupcake</div>
+        <div class="price">$3.75 ea</div>
+      </div>
+      <div class="order_button">
+        <div class="first">QTY</div>
+        <div class="quantity">
+          <form action="/action_page.php">
+            <input type="text" id="nb" name="nb">
+          </form>
+        </div>
+        <div class="add_cart">
+          <button a="#" class="add_button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="Product">
+      <img src="images/cc2.png" alt="Alps">
+      <div class="cupcake_info">
+        <div class="name">Chocolate bomb cupcake</div>
+        <div class="price">$3.75 ea</div>
+      </div>
+      <div class="order_button">
+        <div class="first">QTY</div>
+        <div class="quantity">
+          <form action="/action_page.php">
+            <input type="text" id="nb" name="nb">
+          </form>
+        </div>
+        <div class="add_cart">
+          <button a="#" class="add_button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="Product">
+      <img src="images/cc3p.png" alt="Alps">
+      <div class="cupcake_info">
+        <div class="name">Chocolate bomb cupcake</div>
+        <div class="price">$3.75 ea</div>
+      </div>
+      <div class="order_button">
+        <div class="first">QTY</div>
+        <div class="quantity">
+          <form action="/action_page.php">
+            <input type="text" id="nb" name="nb">
+          </form>
+        </div>
+        <div class="add_cart">
+          <button a="#" class="add_button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="Product">
+      <img src="images/cc4png.png" alt="Alps">
+      <div class="cupcake_info">
+        <div class="name">Chocolate bomb cupcake</div>
+        <div class="price">$3.75 ea</div>
+      </div>
+      <div class="order_button">
+        <div class="first">QTY</div>
+        <div class="quantity">
+          <form action="/action_page.php">
+            <input type="text" id="nb" name="nb">
+          </form>
+        </div>
+        <div class="add_cart">
+          <button a="#" class="add_button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- footer -->
+  <footer>
+    <div class="main_footer">
+      <div class="instagram">
+        <h4>@torontocupcake</h4>
+      </div>
+      <div class="logo_footer"></div>
+      <div class="footer_menu">
+        <a href="#">FAQs</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+    <div class="bottom_footer">
+      <div class="a_menus">
+        <a href="#">Community</a>
+        <a href="#">Employment</a>
+        <a href="#">Resources</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
+</html>
+
+
+
+
 
