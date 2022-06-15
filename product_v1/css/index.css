@@ -14,7 +14,7 @@
 .logo {
     width: 20%;
     background-image: url(../images/logo3.png);
-    background-size: 40%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -38,6 +38,14 @@
     color: black;
 }
 
+.cart {
+    width: 20%;
+    margin-left: 75%;
+    background-image: url(../images/Cart.png);
+    background-repeat: no-repeat;
+    background-size: 18%;
+    background-position: center;
+}
 
 /*Title*/
 
@@ -88,7 +96,11 @@
 
 .dozen_img {
     width: 45%;
-    background-color: pink;
+    background-image: url(../images/dozen.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 5px;
 }
 
 .dozen_order {
