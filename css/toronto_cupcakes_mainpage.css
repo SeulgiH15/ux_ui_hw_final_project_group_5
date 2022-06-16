@@ -317,14 +317,6 @@
   margin-right: 10px;
 }
 
-
-.card_section2 {
-  margin: 30px;
-  display: flex;
-  align-self: stretch;
-  justify-content: center;
-}
-
 .button{
   /* display: absolute; */
   color: black;
@@ -335,12 +327,6 @@
 }
 
 .button1{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.button2{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -362,7 +348,9 @@
   background-color: #71C0CC;
   height: 196px;
   margin-top: 30px;
-  display: flex;
+  display: flex; 
+ justify-content: space-between;
+ align-items: center;
 }
 
 .bottom_footer {
@@ -371,7 +359,6 @@
 }
 
 .instagram {
-  width: 30%;
   margin-left: 30px;
 }
 
@@ -383,17 +370,13 @@
 }
 
 .logo_footer {
-  width: 40%;
-  background-image: url(../images/logo3.png);
-  background-size: 20%;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 100px;
+  width: 100px;
 }
 
 .footer_menu {
-  line-height: 200px;
-  width: 30%;
-  display: inline-block;
+  line-height: 200px;  
+  display: flex;
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
   margin-right: 30px;
@@ -420,7 +403,9 @@
   color: black;
 }
 
-
+.qty{
+  display:flex;
+}
 
 @media only screen and (max-width: 600px) {
   .hero{
@@ -441,7 +426,35 @@
       display: flex;
       align-items: center;
   }
-  
+  .qty{
+    flex-direction: column;
+  }
+  .order_button{
+    flex-direction: column;
+  }
+  .cupcake_info{
+    flex-direction: column;
+    width: 100%;
+  }
+  .add_button {
+    width: 100%;
+    height:fit-content;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .Product{
+    padding:8px;
+  }
+  .Product img {
+    height: auto;   
+  }
+  .name {
+    width:auto;
+    margin-right: 0px;
+    overflow-wrap: break-word;
+    margin-left:0px;
+    padding-right: 8px;      
+  }
 }
 
 @media only screen and (max-width: 850px) {
