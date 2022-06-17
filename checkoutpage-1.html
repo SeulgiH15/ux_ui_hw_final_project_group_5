@@ -1,0 +1,147 @@
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="checkoutpage-3.js"></script>
+        <link rel="stylesheet" type="text/css" href="checkoutpage-2.css" />
+        <link rel="stylesheet" type="text/css" href="navBarStyle.css" />
+        
+    </head>
+    <body onload="reset()">
+        <!--<div>
+            <div id="navBar">
+                <img src="img\logo.png" class="ico" />
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <img src="img\cart.png" class="ico2" />
+            </div>
+        </div>-->
+        <header>
+            <nav class="responsive-menu ">
+                <a href="#" class="toggle-menu" data-toggle-class="active" data-toggle-target=".main-menu, this" id="mainIco">&equiv;</a>
+    
+                <ul class="main-menu">
+                    <li id="logoLi">
+                        <img src="img\logo.png" id="mainLogo" />
+                    </li>
+                    <li clss="hoverColored">
+                        <a href="#"><span>MyOrders</span></a>
+                        <ul class="sub-menu">
+                            <li><a href="#"><span>Item 1.1</span></a></li>
+                            <li><a href="#"><span>Item 1.2</span></a></li>
+                        </ul>
+                    </li>
+                    <li clss="hoverColored">
+                        <a href="#"><span>AboutUs</span></a>
+                        <ul class="sub-menu">
+                            <li><a href="#"><span>Item 2.1</span></a></li>
+                            <li><a href="#"><span>Item 2.2</span></a></li>
+                            <li><a href="#"><span>Item 2.3</span></a></li>
+                        </ul>
+                    </li>
+                    <li clss="hoverColored"><a href="#"><span>Delivery</span></a></li>
+                    <li clss="hoverColored"><a href="#"><span>Custome&nbsp;Cupcakes</span></a></li>
+                    <li clss="hoverColored"><a href="#"><span>Cupcakes</span></a></li>
+                </ul>
+                <center><img src="img\logo.png" id="middleLogo" class="logo" /></center>
+                
+            </nav>
+            <img src="img\cart.png" id="menuLogo" class="logo">
+        </header>
+                <script type="text/javascript" src="navBarScript.js"></script>
+                <br />
+                <div id="yourCart">
+                    <p>
+                        Your&nbsp;Cart
+                    </p>
+                    <br />
+                    <hr id="topLine" />
+                </div>
+                <div id="priceHeader">
+                    <div class="itemRow">
+                        <div class="BasketCol0">
+                            <p class="title1">Product</p>
+                        </div>
+                        <div class="BasketCol1">
+                           
+                                <p class="title">Price</p>
+                                <p class="title">Quantity</p>
+                                <p class="title">Total</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="alert  alert-dismissable itemRow">
+                    <div class="BasketCol0">
+                        <button type="button" class="close" data-dismiss="alert" onclick="removeBox(1)">&times;</button>
+                    </div>
+                    <div class="BasketCol1">
+                        <img src="img\purchase.png" class="purchase" />
+                        <label class="shoppingItems">Chocolate peanut butter</label>
+                    </div>
+                    <div class="BasketCol2">
+                        <input type="text" name="price1" size="5" id="price1" class="price" />
+                        <input type="button" onclick="decrementValue(1)" value="-" class="addQuantity" />
+                        <input type="text" name="quantity1" value="1" maxlength="2" max="10" size="1" id="quantity1" class="quantity" />
+                        <input type="button" onclick="incrementValue(1)" value="+" class="addQuantity" />
+                        <input type="text" name="subtoal1" value="1500" size="5" id="subtoal1" class="subtoal" />
+                    </div>
+                </div>
+                <div class="alert  alert-dismissable itemRow">
+                    <div class="BasketCol0">
+                        <button type="button" class="close" data-dismiss="alert" onclick="removeBox(2)">&times;</button>
+                    </div>
+                    <div class="BasketCol1">
+                        <img src="img\purchase.png" class="purchase" />
+                        <label class="shoppingItems">Chocolate bomb</label>
+                    </div>
+                    <div class="BasketCol2">
+                        <input type="text" name="price2" size="5" id="price2" class="price" />
+                        <input type="button" onclick="decrementValue(2)" value="-" class="addQuantity" />
+                        <input type="text" name="quantity2" value="1" maxlength="2" max="10" size="1" id="quantity2" class="quantity" />
+                        <input type="button" onclick="incrementValue(2)" value="+" class="addQuantity" />
+                        <input type="text" name="subtoal2" value="1500" size="5" id="subtoal2" class="subtoal" />
+                    </div>
+                </div>
+                <div class="alert  alert-dismissable itemRow">
+                    <div class="BasketCol0">
+                        <button type="button" class="close" data-dismiss="alert" onclick="removeBox(3)">&times;</button>
+                    </div>
+                    <div class="BasketCol1">
+                        <img src="img\purchase.png" class="purchase" />
+                        <label class="shoppingItems">Birthday sprinkle</label>
+                    </div>
+                    <div class="BasketCol2">
+                        <input type="text" name="price3" size="5" id="price3" class="price" />
+                        <input type="button" onclick="decrementValue(3)" value="-" class="addQuantity" />
+                        <input type="text" name="quantity3" value="1" maxlength="2" max="10" size="1" id="quantity3" class="quantity" />
+                        <input type="button" onclick="incrementValue(3)" value="+" class="addQuantity" />
+                        <input type="text" name="subtoal3" value="1500" size="5" id="subtoal3" class="subtoal" />
+                    </div>
+                </div>
+                <div class="itemRow">
+                    <div class="CoupunCol0">
+                        <input type="text" id="CoupunText" placeholder="Coupon Code" />
+                    </div>
+                    <div class="CoupunCol1">
+                        <input type="button" id="applyCoupun" value="Apply&nbsp;Coupun" />
+                    </div>
+                </div>
+                <input type="text" name="total" value="0" size="5" id="total" />
+                <footer>
+                    <a class="footLink" href="#"><img class="FooterImg" src="img\logo.png" /></a>
+                    <a class="footLink" href="#"><img class="FooterImg" src="img\instagram.png" style="width:40px; height:39px;" /></a>
+                    <div id="footer2">
+                        <a href="#">Community</a>
+                        <a href="#">Employment</a>
+                        <a href="#">Resources</a>
+                    </div>
+                </footer>
+    </body>
+    </html>
