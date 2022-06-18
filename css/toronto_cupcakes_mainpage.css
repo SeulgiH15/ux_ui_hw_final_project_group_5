@@ -17,6 +17,7 @@
 
 .toggle-button{
   position:absolute;
+  align-items: left;
   top:.75rem;
   right: 1rem;
   display:none;
