@@ -251,10 +251,8 @@ nav {
     width: 15%;
 }
 #menuLogo {
-    height:60px;
-    max-height: 90px;
-    max-width: 30px;
     margin-right: 5%;
+    margin-top: 30px;
     float: right;
     padding-top: 20px;
 }
